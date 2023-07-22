@@ -19,10 +19,10 @@ IMC em adultos Condição:
 
 */
 
-const peso = 72;
-const altura = 1.80;
+const peso = 90;
+const altura = 1.90;
 
-const imc = peso / (altura * altura);
+const imc = peso / (altura * altura); // Math.pow(altura, 2)
 
 if (imc < 18.5) 
 {
