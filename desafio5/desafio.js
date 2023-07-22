@@ -16,21 +16,21 @@ Código condição de pagamento:
 
 let preco = 100.00;
 let taxa = 0;
-const condicao = 'Débito';
+const condicao = 1;
 
-if (condicao === 'Débito') 
+if (condicao === 1) 
 {
     taxa = (preco * 10) / 100;
     preco = preco - taxa;
     console.log('O valor é: ', preco);
 }
-else if (condicao === 'Dinheiro' || condicao === 'PIX') 
+else if (condicao === 2) 
 {
     taxa = (preco * 15) / 100;
     preco = preco - taxa;
     console.log('O valor é: ', preco)
 }
-else if (condicao === 'duasvezes')
+else if (condicao === 3)
 {
     console.log('O valor é: ', preco)
 }
